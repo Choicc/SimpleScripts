@@ -8,21 +8,21 @@
 const $ = new Env("互助码");
 const shareCodes = [
   {
-    zd: "qu73szyyke7tv4sgpjojpyiq6u",
+    zd: "mlrdw3aw26j3w2a4wkystsja4m4qqbwwlo6xfqi",
     nc: "f659e47c5ef748539facfefa76ddb8de",
     mc: "mlrdw3aw26j3w2a4wkystsja4m4qqbwwlo6xfqi",
     ddgc:"P04z54XCjVWnYaS5m9cZ2Wpj3QfwKh9xCswWug",
     jxgc: "9XtlAv2wWN1_1cG-TYj1TA==",
   },
   {
-    zd: "mlrdw3aw26j3w2a4wkystsja4m4qqbwwlo7xfqi",
+    zd: "olmijoxgmjutyswbr4sur6cqawdoftqlvi6qmyq",
     nc:"eb5edbd87cb940039403c9ff37868866",
     mc: "MTE1NDQ5OTUwMDAwMDAwMzU1MjgyNDE=",
     ddgc: "P04z54XCjVWnYaS5m9cZ2b6iXQYlEmfbB6AHDo",
     jxgc: "",
   },
   {
-    zd: "mlrdw3aw26j3w2a4wkystsja4m4qqbwwlo8xfqi",
+    zd: "e7lhibzb3zek2yi5seif4f6dttnwi6vyvevh5ki",
     nc:"f0b835c73b784ba8a4efbe95a91e899e",
     mc: "MTE1NDAxNzYwMDAwMDAwMzU1NTQyMDE=",
     ddgc: "P04z54XCjVWnYaS5m9cZ2TwiXpKwME62Y10F_U",
