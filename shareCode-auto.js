@@ -10,7 +10,7 @@ const shareCodes = [
   {
     zd: "mlrdw3aw26j3w2a4wkystsja4m4qqbwwlo6xfqi",
     nc: "f659e47c5ef748539facfefa76ddb8de",
-    mc: "mlrdw3aw26j3w2a4wkystsja4m4qqbwwlo6xfqi",
+    mc: "MTAxODc2NTEzNDAwMDAwMDAzMjExMzk5Mw==",
     ddgc:"P04z54XCjVWnYaS5m9cZ2Wpj3QfwKh9xCswWug",
     jxgc: "9XtlAv2wWN1_1cG-TYj1TA==",
   },
