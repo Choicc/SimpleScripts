@@ -19,7 +19,7 @@ const shareCodes = [
     nc:"eb5edbd87cb940039403c9ff37868866",
     mc: "MTE1NDQ5OTUwMDAwMDAwMzU1MjgyNDE=",
     ddgc: "P04z54XCjVWnYaS5m9cZ2b6iXQYlEmfbB6AHDo",
-    jxgc: "",
+    jxgc: "ERudc-j9UfvCClxbZrDy3g==",
   },
   {
     zd: "e7lhibzb3zek2yi5seif4f6dttnwi6vyvevh5ki",
