@@ -13,6 +13,7 @@ const shareCodes = [
     mc: "MTAxODc2NTEzNDAwMDAwMDAzMjExMzk5Mw==",
     ddgc:"P04z54XCjVWnYaS5m9cZ2Wpj3QfwKh9xCswWug",
     jxgc: "9XtlAv2wWN1_1cG-TYj1TA==",
+    jdzz: "9XtlAv2wWN1_1cG-TYj1TA==",
   },
   {
     zd: "olmijoxgmjutyswbr4sur6cqawdoftqlvi6qmyq",
@@ -20,6 +21,7 @@ const shareCodes = [
     mc: "MTE1NDQ5OTUwMDAwMDAwMzU1MjgyNDE=",
     ddgc: "P04z54XCjVWnYaS5m9cZ2b6iXQYlEmfbB6AHDo",
     jxgc: "ERudc-j9UfvCClxbZrDy3g==",
+    jdzz: "9XtlAv2wWN1_1cG-TYj1TA==",
   },
   {
     zd: "e7lhibzb3zek2yi5seif4f6dttnwi6vyvevh5ki",
@@ -27,6 +29,7 @@ const shareCodes = [
     mc: "MTE1NDAxNzYwMDAwMDAwMzU1NTQyMDE=",
     ddgc: "P04z54XCjVWnYaS5m9cZ2TwiXpKwME62Y10F_U",
     jxgc: "",
+    jdzz: "9XtlAv2wWN1_1cG-TYj1TA==",
   },
   {
     zd: "mlrdw3aw26j3xsgftkyvutj2p6thardpdspqi5q",
@@ -34,6 +37,7 @@ const shareCodes = [
     mc: "MTAxODc2NTEzMjAwMDAwMDAyODE5MzY1MQ==",
     ddgc: "P04z54XCjVWnYaS5m9cZ2Wu1HlOlqaC3TgGxCQ",
     jxgc: "",
+    jdzz: "9XtlAv2wWN1_1cG-TYj1TA==",
   },
   {
     zd: "mlrdw3aw26j3w2a4wkystsja4m4qqbwwlo9xfqi",
@@ -41,6 +45,7 @@ const shareCodes = [
     mc: "MTE1NDQ5OTUwMDAwMDAwMzYwNDk0Nzc=",
     ddgc: "",
     jxgc: "",
+    jdzz: "9XtlAv2wWN1_1cG-TYj1TA==",
   }
 ];
 $.result = [];
@@ -79,6 +84,12 @@ $.random = Math.floor(Math.random() * 60);
       (await create(
         `http://api.turinglabs.net/api/v1/jd/jxfactory/create/${jxgc}/`,
         "京喜工厂"
+      ));
+    await $.wait($.random);
+    jxgc &&
+      (await create(
+        `https://code.chiang.fun/api/v1/jd/jdzz/create/${jdzz}/`,
+        "京东赚赚"
       ));
   }
   await showMsg();
