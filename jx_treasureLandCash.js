@@ -1,38 +1,28 @@
 /**
 *
-  Name:财富岛提现
-  Address: 京喜App ====>>>> 全民赚大钱
-  Update: 2020/12/19 8:00
-  Thanks: 
-    银河大佬：https://github.com/zbt494
-  获取Token方式：
-  打开【❗️京喜农场❗️】，手动任意完成<工厂任务>、<签到任务>、<金牌厂长任务>一项，提示获取cookie成功即可，然后退出跑任务脚本
+ 来自群友文件---自用
+  Name:treasureLandCash
+
   Quantumult X:
     [task_local]
-    0 0 * * * https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfdtx.js, tag=京喜财富岛, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxcfd.png, enabled=true
-    [rewrite_local]
-    ^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.cookie.js
-
+    0 0 * * * https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfdtx.js, tag=财富现金抢兑, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxcfd.png, enabled=true
+ 
     Loon:
     [Script]
     http-request ^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.cookie.js, requires-body=false, timeout=10, tag=京喜农场cookie
-    cron "0 0 * * *" script-path=https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfdtx.js,tag=京喜财富岛
     
     Surge:
-    京喜财富岛 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfdtx.js
-    京喜农场cookie = type=http-request,pattern=^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.cookie.js
+    财富现金抢兑 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfdtx.js
+    
     
     Shadowrocket:
     [Script]
-    京喜财富岛 = type=cron,script-path=https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfdtx.js,cronexpr="0 0 * * *",timeout=120,enable=true
-    京喜农场Cookie = type=http-request,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.cookie.js,pattern=^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask,max-size=131072,timeout=10,enable=true
-
-    BoxJS订阅
-    https://raw.githubusercontent.com/whyour/hundun/master/quanx/whyour.boxjs.json
+    财富现金抢兑 = type=cron,script-path=https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfdtx.js,cronexpr="0 0 * * *",timeout=120,enable=true
+   
 *
 **/
 
-const $ = new Env("京喜财富岛提现");
+const $ = new Env("财富现金抢兑");
 const JD_API_HOST = "https://m.jingxi.com/";
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 $.tokens = [$.getdata('jxnc_token1') || '{}', $.getdata('jxnc_token2') || '{}'];
